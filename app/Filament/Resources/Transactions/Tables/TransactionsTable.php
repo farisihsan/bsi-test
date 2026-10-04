@@ -14,6 +14,9 @@ class TransactionsTable
     {
         return $table
             ->columns([
+                TextColumn::make('id')
+                    ->label('ID')
+                    ->sortable(),
                 TextColumn::make('stock.nama_barang')
                     ->searchable(),
                 TextColumn::make('tipe_transaksi')
